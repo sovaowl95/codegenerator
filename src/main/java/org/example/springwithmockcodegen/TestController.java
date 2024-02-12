@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("request-mapping")
 public class TestController {
-  @GetMapping("get-mapping")
+  @GetMapping("get-mapping/{userId}/{id}")
   public ResponseDto responseDto() {
     return new ResponseDto("123", "456");
   }

@@ -45,7 +45,7 @@ public class ClassGenerator {
                      .addParameter(dtoArgument)
                      .returns(TypeName.VOID)
 //                     .addStatement(getMethodBody(), dtoArgument)
-                     .addStatement("fieldName.mock(dto)")
+                     .addStatement("fieldName.mock(dto); \n//" + endpoint + "")
                      .build();
   }
 
